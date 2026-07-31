@@ -57,7 +57,7 @@ cvDownloadBtn.addEventListener('click', (e) => {
     downloadCV();
 });
 
-function downloadCV() {
+/*function downloadCV() {
    
     
     const cvFileName = 'YourName_CV.pdf';
@@ -110,9 +110,9 @@ function downloadCV() {
     - [Add your certifications]
     - [Add achievements]
     `;
-    
+    */
   
-    const blob = new Blob([cvContent], { type: 'text/plain' });
+   /* const blob = new Blob([cvContent], { type: 'text/plain' });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
@@ -120,7 +120,7 @@ function downloadCV() {
     document.body.appendChild(a);
     a.click();
     window.URL.revokeObjectURL(url);
-    document.body.removeChild(a);
+    document.body.removeChild(a);*/
     
     // Show feedback
     showNotification('CV downloading...');
