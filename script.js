@@ -58,17 +58,11 @@ cvDownloadBtn.addEventListener('click', (e) => {
 });
 
 function downloadCV() {
-    // Create a simple PDF-like document
-    // For now, we'll create a downloadable text/PDF
-    // You can replace this URL with your actual CV file
+   
     
     const cvFileName = 'YourName_CV.pdf';
     
-    // Option 1: If you have a CV file hosted, use this:
-    // const cvUrl = 'https://your-cv-url.com/cv.pdf';
-    // window.open(cvUrl, '_blank');
-    
-    // Option 2: Create a simple text file CV
+
     const cvContent = `
     YOUR NAME
     Frontend Developer | UI/UX Enthusiast
@@ -117,7 +111,7 @@ function downloadCV() {
     - [Add achievements]
     `;
     
-    // Create blob and download
+  
     const blob = new Blob([cvContent], { type: 'text/plain' });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -401,16 +395,6 @@ function isMobileDevice() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
-// ============================================
-// GENERATE PDF CV (Alternative Implementation)
-// ============================================
-// If you want to use a library like jsPDF, include it and use:
-// function generatePDFCV() {
-//     const doc = new jsPDF();
-//     doc.text('Your Name', 10, 10);
-//     doc.text('Frontend Developer | UI/UX Enthusiast', 10, 20);
-//     // ... add more content
-//     doc.save('YourName_CV.pdf');
-// }
+
 
 console.log('Portfolio loaded successfully!');
