@@ -112,7 +112,7 @@ cvDownloadBtn.addEventListener('click', (e) => {
     `;
     */
   
-   /* const blob = new Blob([cvContent], { type: 'text/plain' });
+   const blob = new Blob([cvContent], { type: 'text/plain' });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
@@ -124,7 +124,7 @@ cvDownloadBtn.addEventListener('click', (e) => {
     
     // Show feedback
     showNotification('CV downloading...');
-}
+
 
 // ============================================
 // NOTIFICATION SYSTEM
